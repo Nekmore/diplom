@@ -1,0 +1,19 @@
+.footer {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.footer_content ul {
+    margin: 20px 0 20px 0;
+    list-style: none;
+}
+
+.footer_content ul li {
+    margin: 15px 0 15px 0;
+}

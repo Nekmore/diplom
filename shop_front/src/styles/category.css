@@ -1,0 +1,26 @@
+.catalog_block {
+    width: 1200px;
+    margin: 20px auto 0 auto;
+}
+
+.catalog {
+    width: 1200px;
+    margin: 20px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.card_image > img {
+    width: 150px;
+    height: 150px;
+}
