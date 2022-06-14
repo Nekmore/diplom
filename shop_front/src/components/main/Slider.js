@@ -56,7 +56,7 @@ export default function Slider() {
                 </div>
                 
             </div>
-            <div class="slider-navigation">
+            <div className="slider-navigation">
                 <span><span></span></span>
                 <span><span></span></span>
                 <span><span></span></span>

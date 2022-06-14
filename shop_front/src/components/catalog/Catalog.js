@@ -11,7 +11,7 @@ export default function Catalog(props) {
         fetch(API_CATEGORY_LIST)
             .then(response => response.json())
             .then(data => {
-                data.records && setItems(data.records.slice(0, 24));
+                data.records && setItems(data.records);
                 setLoading(false);
             });
     }, []);

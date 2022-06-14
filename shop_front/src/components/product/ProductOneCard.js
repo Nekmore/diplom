@@ -34,6 +34,7 @@ export default function ProductOneCard(props) {
                         Описание товара
                     </div>
                     <p>{description}</p>
+                    <p>{price} р.</p>
                     <a href="" className="border-button">Купить</a>
                 </div>
             </div>

@@ -38,6 +38,7 @@ if ($num > 0) {
             'name' => $name,
             'description' => html_entity_decode($description),
             'characteristics' => html_entity_decode($characteristics),
+            'detail' => html_entity_decode($detail),
             'image' => $image,
             'price' => $price,
             'category_id' => $category_id,

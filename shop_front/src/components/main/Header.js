@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import '../../styles/header.css'
+import logo from '../../logo/logo-big-en.png'
 
 export default function Header(props) {
     return (
         <header>
 
             <div className="header">
-                <div className="logo"><Link to="/"><img src="images/logo-big-en.png" alt="logo" /></Link></div>
+                <div className="logo"><Link to="/"><img src={logo} alt="logo" /></Link></div>
                 <ul>
                     <li>
                         <Link to="/">О компании</Link>

@@ -7,13 +7,22 @@ export default function ProductOne(props) {
     const [records, setItems] = useState([]); // товары магазина
     const [loading, setLoading] = useState(true); // идет загрузка?
     const location = useLocation();
-    const catId = location.pathname.slice(-1);
+    const catId = idCat(location.pathname);
+
+    function idCat(location) {
+        let categoryId = location.split('/');
+        categoryId = categoryId.slice(-1);
+        categoryId  = categoryId.toString();
+        console.log(categoryId);
+        return categoryId;
+    }
+   
 
     useEffect(() => {
         fetch(API_URL_LIST)
             .then(response => response.json())
             .then(data => {
-                data.records && setItems(data.records.slice(0, 24));
+                data.records && setItems(data.records);
                 setLoading(false);
             });
     }, []);
